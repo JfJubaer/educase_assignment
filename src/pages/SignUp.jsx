@@ -21,7 +21,7 @@ function CreateAccount() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center p-4">
+    <div className="min-h-screen   flex  justify-center p-4">
       <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full">
         <h2 className="text-3xl font-bold text-gray-800 mb-2">
           Create your PopX account
@@ -160,7 +160,7 @@ function CreateAccount() {
           <button
             type="submit"
             className="w-full bg-purple-700 text-white font-semibold py-2 rounded-lg 
-                     hover:bg-purple-800 transition-all duration-200 mt-6"
+                     mt-52"
           >
             Create Account
           </button>
