@@ -17,11 +17,14 @@ function SignIn() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-linear-to-br  flex  justify-center p-4">
       <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
-          Sign In
+        <h2 className="text-3xl font-bold  text-gray-800 mb-2">
+          Sign in to your PopX account
         </h2>
+        <p className=" mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        </p>
 
         <form
           onSubmit={handleSubmit}
@@ -61,30 +64,13 @@ function SignIn() {
 
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white 
-                     font-semibold py-2 rounded-lg hover:opacity-90 transform 
-                     hover:scale-105 transition-all duration-200"
+            className="w-full bg-purple-700 text-white 
+                     font-semibold py-2 rounded-lg 
+                     "
           >
-            Sign In
+            Log In
           </button>
         </form>
-
-        <p className="text-center text-gray-600 mt-6">
-          Don't have an account?{" "}
-          <button
-            onClick={() => navigate("/create-account")}
-            className="text-purple-600 font-semibold hover:underline"
-          >
-            Create Account
-          </button>
-        </p>
-
-        <button
-          onClick={() => navigate("/")}
-          className="mt-4 text-gray-500 hover:text-gray-700 text-sm w-full text-center"
-        >
-          ← Back to Home
-        </button>
       </div>
     </div>
   );
